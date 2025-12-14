@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="HandPoseCatalogue" load_steps=33 format=3 uid="uid://csy7fd4i3c7qw"]
 
-[ext_resource type="Script" path="res://XRHandtrackingTools/TrackedHands/hand_pose.gd" id="1"]
-[ext_resource type="Script" path="res://XRHandtrackingTools/TrackedHands/hand_pose_catalogue.gd" id="2"]
+[ext_resource type="Script" uid="uid://cm3u50pjk6xm8" path="res://XRHandtrackingTools/TrackedHands/hand_pose.gd" id="1"]
+[ext_resource type="Script" uid="uid://sfbeshknj06b" path="res://XRHandtrackingTools/TrackedHands/hand_pose_catalogue.gd" id="2"]
 
 [sub_resource type="Resource" id="Resource_5ugny"]
 script = ExtResource("1")

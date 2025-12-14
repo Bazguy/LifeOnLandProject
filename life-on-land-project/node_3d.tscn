@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://dh2p0b75o1cec"]
+
+[ext_resource type="Script" uid="uid://n586sik0ru2o" path="res://start_xr.gd" id="1_a202f"]
+[ext_resource type="Texture2D" uid="uid://bubu10qa7duo4" path="res://myAssets/hiluca.png" id="2_noarx"]
+
+[sub_resource type="Environment" id="Environment_a202f"]
+background_mode = 1
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_noarx"]
+
+[sub_resource type="Compositor" id="Compositor_a0tk4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0tk4"]
+albedo_texture = ExtResource("2_noarx")
+uv1_scale = Vector3(-0.1, -0.1, -0.1)
+uv1_offset = Vector3(0.53, 0.065, 0.555)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 0.93303293
+
+[sub_resource type="BoxMesh" id="BoxMesh_a0tk4"]
+material = SubResource("StandardMaterial3D_a0tk4")
+size = Vector3(10, 1, 10)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+
+[node name="OpenXRFbSceneManager" type="OpenXRFbSceneManager" parent="XROrigin3D"]
+
+[node name="left hand" type="XRNode3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+
+[node name="right hand" type="XRNode3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+
+[node name="Start Passthrough" type="Node" parent="."]
+script = ExtResource("1_a202f")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_a202f")
+camera_attributes = SubResource("CameraAttributesPractical_noarx")
+compositor = SubResource("Compositor_a0tk4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.2098234)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(-0.99935937, -0.03578897, -4.3683386e-08, -4.371139e-08, 2.1324296e-15, 1, -0.03578897, 0.9993595, -1.5643871e-09, -1.7726424, 0.3806584, -11.941378)
+mesh = SubResource("BoxMesh_a0tk4")
+skeleton = NodePath("../../XROrigin3D/left hand")
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.474098, 0)
+light_energy = 0.835
