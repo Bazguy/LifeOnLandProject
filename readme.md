@@ -10,7 +10,7 @@ Github: https://github.com/Bazguy
 
 # Video
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](h ttps://youtu.be/f2x7tmnvriE?si=QN0n0sXsxpk7_L4r)
+[![YouTube](https://img.youtube.com/watch?v=f2x7tmnvriE/0.jpg)](https://youtu.be/f2x7tmnvriE?si=uKknlj0vAz8h6e1A)
 
 # Screenshots
 
