@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfyyndooqvxda"]
+
+[ext_resource type="PackedScene" uid="uid://6vjducgx1hhv" path="res://flower_box.tscn" id="1_74yqc"]
+
+[node name="FlowerBoxes" type="Node3D"]
+
+[node name="FlowerBox9" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(0.2689316, 0, 0.5641815, 0, 0.625, 0, -0.5641815, 0, 0.2689316, -1.6154741, 0, -1.6537402)
+
+[node name="FlowerBox8" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(-0.18069708, 0, 0.5983089, 0, 0.625, 0, -0.5983089, 0, -0.18069708, -1.183055, 0, 0.40357327)
+
+[node name="FlowerBox7" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(0.32761198, 0, -0.532255, 0, 0.625, 0, 0.532255, 0, 0.32761198, -2.113545, 0, -0.5842464)
+
+[node name="FlowerBox6" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(0.03720806, 0, -0.6238915, 0, 0.625, 0, 0.6238915, 0, 0.03720806, -1.7020833, 1.2823641, -3.2478611)
+
+[node name="FlowerBox5" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(-0.04909128, 0, -0.62306905, 0, 0.625, 0, 0.62306905, 0, -0.04909128, 1.2584996, 0.8081293, -1.1487806)
+
+[node name="FlowerBox4" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(0.5948972, 0, 0.19163072, 0, 0.625, 0, -0.19163072, 0, 0.5948972, 0.6823418, 1.2368271, -1.9003845)
+
+[node name="FlowerBox3" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(0.21841976, 0, -0.58559185, 0, 0.625, 0, 0.58559185, 0, 0.21841976, -0.012041688, 0.36533678, -3.1973557)
+
+[node name="FlowerBox2" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(-0.27287355, 0, 0.56228554, 0, 0.625, 0, -0.56228554, 0, -0.27287355, 1.2353474, 0.46012282, -2.9846206)
+
+[node name="FlowerBox10" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(-0.40162528, 0, -0.47887594, 0, 0.625, 0, 0.47887594, 0, -0.40162528, 0.44577003, -0.25198913, -0.62389326)
+
+[node name="FlowerBox" parent="." instance=ExtResource("1_74yqc")]
+transform = Transform3D(0.3117534, 0, 0.54169625, 0, 0.625, 0, -0.54169625, 0, 0.3117534, -2.7204275, 1.2368271, -1.798586)

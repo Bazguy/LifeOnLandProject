@@ -33,6 +33,7 @@ func _process(delta):
 	#if not current:
 	#	return
 		
+	
 	var direction = Vector3(
 		float(Input.is_physical_key_pressed(KEY_D)) - float(Input.is_physical_key_pressed(KEY_A)),
 		float(Input.is_physical_key_pressed(KEY_E)) - float(Input.is_physical_key_pressed(KEY_Q)), 
@@ -43,3 +44,7 @@ func _process(delta):
 		translate(direction * _velocity * delta * boost_speed_multiplier)
 	else:
 		translate(direction * _velocity * delta)
+
+
+func _on_flower_box_1_body_entered(body: Node3D) -> void:
+	pass # Replace with function body.

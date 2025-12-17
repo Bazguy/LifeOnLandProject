@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dhw38t4v4v4vg"]
 
-[ext_resource type="Script" path="res://XRHandtrackingTools/TrackedHands/xr_pickup_function.gd" id="1_jqegu"]
+[ext_resource type="Script" uid="uid://fheo6ob1kjem" path="res://XRHandtrackingTools/TrackedHands/xr_pickup_function.gd" id="1_jqegu"]
 [ext_resource type="PackedScene" uid="uid://b3rhymncbdh4c" path="res://XRHandtrackingTools/TrackedHands/hand_pose_matcher.tscn" id="2_ahg6j"]
-[ext_resource type="Script" path="res://XRHandtrackingTools/TrackedHands/velocity_averager_3d.gd" id="3_pcx1m"]
+[ext_resource type="Script" uid="uid://drqlgoouahb1u" path="res://XRHandtrackingTools/TrackedHands/velocity_averager_3d.gd" id="3_pcx1m"]
 [ext_resource type="PackedScene" uid="uid://cpso6wd6r7u45" path="res://XRHandtrackingTools/TrackedHands/ranged_pointer.tscn" id="4_hkchc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vjlxy"]

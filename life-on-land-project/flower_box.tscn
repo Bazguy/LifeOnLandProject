@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://6vjducgx1hhv"]
+
+[ext_resource type="Script" uid="uid://mbuwr6i41m8x" path="res://GrowFlower.gd" id="1_vhf1r"]
+[ext_resource type="PackedScene" uid="uid://dj0b7y0ep6awh" path="res://ImportedAssets/75-flowergrass/FBX/flower01.fbx" id="2_rcodl"]
+[ext_resource type="PackedScene" uid="uid://c7iwxm8s42vy5" path="res://ImportedAssets/75-flowergrass/FBX/flower02.fbx" id="3_oxn0h"]
+[ext_resource type="PackedScene" uid="uid://crb8pn3lvwgh4" path="res://ImportedAssets/75-flowergrass/FBX/flower03.fbx" id="4_i6prg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0tk4"]
+albedo_color = Color(0.20254055, 0.64899457, 0.30703944, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a0tk4"]
+material = SubResource("StandardMaterial3D_a0tk4")
+size = Vector3(0.985, 0.41, 0.73)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1bvp3"]
+
+[node name="FlowerBox" type="Area3D"]
+transform = Transform3D(0.625, 0, 0, 0, 0.625, 0, 0, 0, 0.625, 0, 0, 0)
+script = ExtResource("1_vhf1r")
+growthLimit = 10.0
+growthRate = 2.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24862874, 0)
+mesh = SubResource("BoxMesh_a0tk4")
+skeleton = NodePath("")
+
+[node name="Flower" parent="." instance=ExtResource("2_rcodl")]
+transform = Transform3D(2.345, 0, 0, 0, 2.345, 0, 0, 0, 2.345, 0.005662203, 0.45753276, 1.5085831)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_1bvp3")
+
+[node name="flower01" parent="." instance=ExtResource("2_rcodl")]
+transform = Transform3D(1.23, 0, 0, 0, 1.23, 0, 0, 0, 1.23, 0.23341393, 0.45356953, 0.68481356)
+
+[node name="flower02" parent="." instance=ExtResource("3_oxn0h")]
+transform = Transform3D(1.82, 0, 0, 0, 1.82, 0, 0, 0, 1.82, -0.33467174, 0.42155135, 1.4376245)
+
+[node name="flower03" parent="." instance=ExtResource("4_i6prg")]
+transform = Transform3D(1.8300002, 0, 0, 0, 1.8300002, 0, 0, 0, 1.8300002, -0.14661312, 0.50872815, 2.4245718)
+
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]

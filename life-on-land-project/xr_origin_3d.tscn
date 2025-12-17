@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://cht3t1nd8q6gb"]
+
+[ext_resource type="PackedScene" uid="uid://bu07alt6vkbaq" path="res://addons/godot-xr-tools/hands/model/Hand_Glove_L.gltf" id="1_yu5ic"]
+[ext_resource type="PackedScene" uid="uid://w7th3d2hl7b5" path="res://addons/godot-xr-tools/hands/model/Hand_Glove_R.gltf" id="2_ojcpv"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1bvp3"]
+radius = 0.05
+height = 0.2
+
+[node name="XROrigin3D" type="XROrigin3D"]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.830721, 0)
+
+[node name="LeftHand" type="XRNode3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0472019, -1.0516555)
+tracker = &"left_hand"
+
+[node name="Area3D" type="Area3D" parent="LeftHand"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LeftHand/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.008360007, 0.9999651, 0, -0.9999651, 0.008360007, 0, -0.00039696693, -0.08445561)
+shape = SubResource("CapsuleShape3D_1bvp3")
+
+[node name="Hand_Glove_L" parent="LeftHand" instance=ExtResource("1_yu5ic")]
+
+[node name="RightHand" type="XRNode3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66504455, 2.573175, -1.4374042)
+tracker = &"right_hand"
+
+[node name="Area3D" type="Area3D" parent="RightHand"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RightHand/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.008360007, 0.9999651, 0, -0.9999651, 0.008360007, 0, -0.00039696693, -0.08445561)
+shape = SubResource("CapsuleShape3D_1bvp3")
+
+[node name="Hand_Glove_R" parent="RightHand" instance=ExtResource("2_ojcpv")]

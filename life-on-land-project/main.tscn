@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=3 uid="uid://dh2p0b75o1cec"]
+
+[ext_resource type="Script" uid="uid://cheenlub3dd2g" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://n586sik0ru2o" path="res://start_xr.gd" id="2_lquwl"]
+[ext_resource type="PackedScene" uid="uid://1n1kke68mut5" path="res://XRHandtrackingTools/TrackedHands/user.tscn" id="3_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cfyyndooqvxda" path="res://flower_boxes.tscn" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://dk5x783h8moga" path="res://flower_boxes.gd" id="5_lquwl"]
+
+[sub_resource type="Environment" id="Environment_a202f"]
+background_mode = 1
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_noarx"]
+
+[sub_resource type="Compositor" id="Compositor_a0tk4"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_1bvp3")
+
+[node name="Start Passthrough" type="Node" parent="."]
+script = ExtResource("2_lquwl")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_a202f")
+camera_attributes = SubResource("CameraAttributesPractical_noarx")
+compositor = SubResource("Compositor_a0tk4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.70931244, 0.70489424, 0, -0.70489424, 0.70931244, 0, 9.474098, 0)
+light_energy = 0.835
+
+[node name="User" parent="." instance=ExtResource("3_7mycd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9216597, 2.1066525, -0.8157486)
+
+[node name="FlowerBoxes" parent="." instance=ExtResource("4_1bvp3")]
+transform = Transform3D(1.96, 0, 0, 0, 1.96, 0, 0, 0, 1.96, 0, 0, 0)
+script = ExtResource("5_lquwl")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
