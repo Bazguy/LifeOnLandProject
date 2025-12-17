@@ -41,7 +41,7 @@ mesh = SubResource("BoxMesh_a0tk4")
 skeleton = NodePath("")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.474098, 0)
+transform = Transform3D(1, 0, 0, 0, 0.70931244, 0.70489424, 0, -0.70489424, 0.70931244, 0, 9.474098, 0)
 light_energy = 0.835
 
 [node name="User" parent="." instance=ExtResource("3_a0tk4")]

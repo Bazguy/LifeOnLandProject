@@ -6,7 +6,6 @@
 [sub_resource type="Resource" id="Resource_5ugny"]
 script = ExtResource("1")
 name = "Cup"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000697959, 0.00623871, 0.0674812),
 1: Transform3D(-0.318235, 0.934985, -0.15662, -0.580347, -0.0615034, 0.812044, 0.749616, 0.349314, 0.562188, 0.0221234, -0.0183827, 0.0284887),
@@ -39,7 +38,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_gwso4"]
 script = ExtResource("1")
 name = "Fist"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00210735, 0.00565261, 0.0669794),
 1: Transform3D(-0.196442, 0.855596, -0.478922, -0.746179, 0.186424, 0.639111, 0.636103, 0.48291, 0.601806, 0.0263516, -0.0142799, 0.029994),
@@ -72,7 +70,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_g4r8i"]
 script = ExtResource("1")
 name = "Five"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0031711, 0.00474292, 0.0660924),
 1: Transform3D(0.242054, 0.643771, -0.725926, -0.885994, 0.451631, 0.105092, 0.395506, 0.617728, 0.679697, 0.0295429, -0.00791242, 0.0326549),
@@ -105,7 +102,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_kpxmw"]
 script = ExtResource("1")
 name = "Four"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000136059, 0.00639077, 0.0675925),
 1: Transform3D(-0.217754, 0.95503, -0.201249, -0.895862, -0.113752, 0.429525, 0.387317, 0.273822, 0.880345, 0.0204377, -0.0194471, 0.0281548),
@@ -138,7 +134,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_dhfbo"]
 script = ExtResource("1")
 name = "Grip"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000858275, 0.00618842, 0.0674419),
 1: Transform3D(-0.288604, 0.933123, -0.214451, -0.659288, -0.0312593, 0.75124, 0.694296, 0.358196, 0.624218, 0.0226043, -0.0180307, 0.0286064),
@@ -171,7 +166,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_k56vg"]
 script = ExtResource("1")
 name = "Horns"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00114533, 0.00608966, 0.0673621),
 1: Transform3D(-0.215672, 0.926192, -0.309279, -0.782605, 0.0254635, 0.621997, 0.583964, 0.376191, 0.719352, 0.0234653, -0.0173394, 0.0288458),
@@ -204,7 +198,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_u5ein"]
 script = ExtResource("1")
 name = "Metal"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00321237, 0.00467887, 0.0660266),
 1: Transform3D(0.13445, 0.628806, -0.76585, -0.863998, 0.45283, 0.220119, 0.485212, 0.632098, 0.60417, 0.0296666, -0.00746401, 0.0328521),
@@ -237,7 +230,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_p1yky"]
 script = ExtResource("1")
 name = "OK"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00100778, 0.00598819, 0.0658348),
 1: Transform3D(-0.28069, 0.927307, -0.247617, -0.667636, -0.0032922, 0.744481, 0.689548, 0.374286, 0.620027, 0.0225891, -0.0172149, 0.028081),
@@ -270,7 +262,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_slduo"]
 script = ExtResource("1")
 name = "One"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00153563, 0.00593477, 0.0672313),
 1: Transform3D(-0.188333, 0.905128, -0.381147, -0.790359, 0.0906883, 0.605895, 0.582978, 0.415353, 0.698297, 0.0246364, -0.0162553, 0.0292384),
@@ -303,7 +294,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_as0ab"]
 script = ExtResource("1")
 name = "Phone"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00319622, 0.00470471, 0.0660532),
 1: Transform3D(0.352615, 0.629869, -0.692046, -0.882704, 0.469389, -0.0225428, 0.31064, 0.618821, 0.721501, 0.0296181, -0.00764464, 0.0327726),
@@ -336,7 +326,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_xjcww"]
 script = ExtResource("1")
 name = "Pistol"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00022554, 0.00636888, 0.0675773),
 1: Transform3D(-0.273409, 0.949254, -0.155451, -0.767275, -0.117757, 0.630415, 0.580118, 0.291635, 0.760534, 0.0207061, -0.0192941, 0.0282004),
@@ -369,7 +358,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_nuqws"]
 script = ExtResource("1")
 name = "Rest"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00211872, 0.0054871, 0.0653967),
 1: Transform3D(-0.0887288, 0.851046, -0.51754, -0.845488, 0.210332, 0.490825, 0.52657, 0.481125, 0.700887, 0.0259217, -0.013707, 0.0293952),
@@ -402,7 +390,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_u7gqk"]
 script = ExtResource("1")
 name = "Three"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000517122, 0.00629159, 0.0675213),
 1: Transform3D(-0.265907, 0.944582, -0.192505, -0.747872, -0.0761338, 0.659462, 0.60826, 0.319325, 0.726671, 0.0215808, -0.0187528, 0.0283684),
@@ -435,7 +422,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_kcd30"]
 script = ExtResource("1")
 name = "Thumb"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0031487, 0.00477547, 0.0661256),
 1: Transform3D(0.202738, 0.653338, -0.729416, -0.884438, 0.441898, 0.149983, 0.420317, 0.614716, 0.667426, 0.0294756, -0.00814003, 0.0325553),
@@ -468,7 +454,6 @@ bone_poses = {
 [sub_resource type="Resource" id="Resource_t34fd"]
 script = ExtResource("1")
 name = "Two"
-hand = 0
 bone_poses = {
 0: Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00127715, 0.00604019, 0.067321),
 1: Transform3D(-0.22269, 0.919237, -0.324673, -0.760555, 0.0445338, 0.647744, 0.609889, 0.391179, 0.689213, 0.023861, -0.0169931, 0.0289691),
