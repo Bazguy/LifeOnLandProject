@@ -19,10 +19,11 @@ tracker = &"left_hand"
 [node name="Area3D" type="Area3D" parent="LeftHand"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="LeftHand/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 0.008360007, 0.9999651, 0, -0.9999651, 0.008360007, 0, -0.00039696693, -0.08445561)
+transform = Transform3D(1, 0, 0, 0, 0.008360007, 0.9999651, 0, -0.9999651, 0.008360007, 0, -0.00039696693, 0.026714206)
 shape = SubResource("CapsuleShape3D_1bvp3")
 
 [node name="Hand_Glove_L" parent="LeftHand" instance=ExtResource("1_yu5ic")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.08480495)
 
 [node name="RightHand" type="XRNode3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66504455, 2.573175, -1.4374042)
@@ -31,7 +32,8 @@ tracker = &"right_hand"
 [node name="Area3D" type="Area3D" parent="RightHand"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RightHand/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 0.008360007, 0.9999651, 0, -0.9999651, 0.008360007, 0, -0.00039696693, -0.08445561)
+transform = Transform3D(1, 0, 0, 0, 0.008360007, 0.9999651, 0, -0.9999651, 0.008360007, 0, -0.00039696693, -0.008880973)
 shape = SubResource("CapsuleShape3D_1bvp3")
 
 [node name="Hand_Glove_R" parent="RightHand" instance=ExtResource("2_ojcpv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.06523073)
