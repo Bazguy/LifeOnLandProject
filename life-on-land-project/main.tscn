@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://cheenlub3dd2g" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="Script" uid="uid://n586sik0ru2o" path="res://start_xr.gd" id="2_lquwl"]
-[ext_resource type="PackedScene" uid="uid://1n1kke68mut5" path="res://XRHandtrackingTools/TrackedHands/user.tscn" id="3_7mycd"]
 [ext_resource type="PackedScene" uid="uid://cfyyndooqvxda" path="res://flower_boxes.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://dk5x783h8moga" path="res://flower_boxes.gd" id="5_lquwl"]
 [ext_resource type="AudioStream" uid="uid://7slhbfe14siv" path="res://ImportedAssets/morning-garden-acoustic-chill-15013.mp3" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cht3t1nd8q6gb" path="res://xr_origin_3d.tscn" id="6_272bh"]
 
 [sub_resource type="Environment" id="Environment_a202f"]
 background_mode = 1
@@ -29,9 +29,6 @@ compositor = SubResource("Compositor_a0tk4")
 transform = Transform3D(1, 0, 0, 0, 0.70931244, 0.70489424, 0, -0.70489424, 0.70931244, 0, 9.474098, 0)
 light_energy = 0.835
 
-[node name="User" parent="." instance=ExtResource("3_7mycd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9216597, 2.1066525, -0.8157486)
-
 [node name="FlowerBoxes" parent="." instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1.96, 0, 0, 0, 1.96, 0, 0, 0, 1.96, -0.8224163, 0, -1.4253001)
 script = ExtResource("5_lquwl")
@@ -40,3 +37,6 @@ script = ExtResource("5_lquwl")
 stream = ExtResource("6_7mycd")
 volume_db = -29.422
 autoplay = true
+
+[node name="XROrigin3D" parent="." instance=ExtResource("6_272bh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96359336, 1.238044, -1.3868368)
