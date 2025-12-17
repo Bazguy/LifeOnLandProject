@@ -1,3 +1,48 @@
+# Project Title: Greenfinger 
+
+Name: Barry Penrose
+
+Student Number: C22460744
+
+Class Group: Game Design (TU984/3)
+
+Github: https://github.com/Bazguy
+
+# Video
+
+[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](h ttps://youtu.be/f2x7tmnvriE?si=QN0n0sXsxpk7_L4r)
+
+# Screenshots
+
+# Description of the project
+A passthrough VR project for the Meta Quest 3 that surrounds the user with virtual flowers while playing soothing music.
+
+# Instructions for use
+Load the Godot project onto a Meta Quest.
+
+# How it works:
+A scene filled with the plant objects slowly rotates around the y-axis with the player in the middle. An AudioStreamPlayer3D node plays the music.
+
+# List of classes/assets in the project
+
+| Class/asset | Source |
+|-----------|-----------|
+| flower_boxes.gd | Self written |
+| start_xr.gd | Modified from Quest:SDG |
+| morning-garden-acoustic-chill-15013.mp3 | From pixabay.com, by folk_acoustic |
+| flower01.fbx, flower02.fbx, flower03.fbx | From free3d.com, by ikvarel |
+
+# References
+* Morning Garden Acoustic Chill mp3 | https://pixabay.com/music/acoustic-group-morning-garden-acoustic-chill-15013/ |
+* Low Poly Flower | https://free3d.com/3d-model/low-poly-flowers-grass-386651.html |
+
+# What I am most proud of in the assignment
+Getting the program to run on a Meta Quest headset, making the project work with passthrough.
+
+# What I learned
+How to work with VR headsets in game development. While I didn't end up implementing it due to time constraints, I spent a lot of time learning how to work with hand tracking and controlling without a controller.
+
+# Proposal submitted earlier can go here (if there is one):
 Project Title: Greenfinger
 
 Libraries/Technology: This is a passthrough XR game using a Meta Quest headset. It will use;
