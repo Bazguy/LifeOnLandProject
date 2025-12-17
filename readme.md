@@ -13,6 +13,7 @@ Github: https://github.com/Bazguy
 [![YouTube](https://img.youtube.com/watch?v=f2x7tmnvriE/0.jpg)](https://youtu.be/f2x7tmnvriE?si=uKknlj0vAz8h6e1A)
 
 # Screenshots
+![Screenshot](/screenshot1.jpg?raw=true "Screenshot of project")
 
 # Description of the project
 A passthrough VR project for the Meta Quest 3 that surrounds the user with virtual flowers while playing soothing music.
